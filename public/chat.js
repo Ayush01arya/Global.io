@@ -18,12 +18,16 @@ socket.on('server-message',function (message) {
 $('#message').submit(function (e) {
     e.preventDefault();
     let ok = true;
+    let str=$('#text').val();
     if($('#text').val().length>255){
-        ok=prompt('your message is over the maximum length, only a part of it will be sent are you sure you want to send it?')
+        ok=confirm('your message is over the maximum length, only a part of it will be sent are you sure you want to send it?')
+        if(ok){
+            str=$('#text').val().substr(0,255);
+        }
     }
     if(ok) {
-        socket.emit('message', $('#text').val(), room, user);
-        createMessage("you",$('#text').val(),"black",'messageR')
+        socket.emit('message', str, room, user);
+        createMessage("you",str,"black",'messageR')
 
         socket.emit('stopped-typing', user, room);
     }
