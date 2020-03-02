@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Global.io</title>
+
+    <link type="text/css" rel="stylesheet" href="/styles/chat.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/client-support.js" defer></script>
+
+    <script>
+        var user = <%- JSON.stringify( user ) %>
+        var room = <%- JSON.stringify(room)%>;
+    </script>
+
+    <script type="module" src="/chat.js" defer></script>
+
+
+</head>
+<body>
+<div id="header">
+    <h1 id="roomname">Welcome to <%-room%></h1>
+    <div id="wrap">
+    <div id="online">online: </div>
+    <div id="typing">typing:  </div></div>
+</div>
+<div id="chat-area">
+
+
+</div>
+
+<form id="message">
+
+    <input type="text" id="text" name="text">
+    <button type="submit"><img src="/assets/plane.svg" width=70% height=70% align="center" ></button></form></body>
+
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+
+@keyframes bgcolor {
+    0% {
+        background-color: #E4243A
+    }
+
+    6% {
+        background-color: #DDA939
+    }
+
+    12% {
+        background-color: #46A049
+    }
+
+    24% {
+        background-color: #C9212E
+    }
+
+    29% {
+        background-color: #F53F2A
+    }
+    35% {
+        background-color: #2CBFE3
+    }
+    40% {
+        background-color: #FDC411
+    }
+    46% {
+        background-color: #A21F41
+    }
+    52% {
+        background-color: #EC6E2C
+    }
+    57% {
+        background-color: #C72368
+    }
+    63% {
+        background-color: #FBA11D
+    }
+    69% {
+        background-color: 	#C48B32
+    }
+    75% {
+        background-color: 		#428041
+    }
+    80% {
+        background-color: 		#2892D3
+    }
+    86% {
+        background-color: 		#59BA47
+    }
+    91% {
+        background-color: 			#15699B
+    }
+
+    96% {
+        background-color: 	#164A65
+    }
+}
+body {
+    -webkit-animation: bgcolor 170s infinite;
+    animation: bgcolor 170s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#formElem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+#room,#username, #submit-b{
+    margin-top: 100px;
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    -webkit-box-shadow: -9px -9px 21px 0px rgba(54,54,54,0.66);
+    -moz-box-shadow: -9px -9px 21px 0px rgba(54,54,54,0.66);
+    box-shadow: -9px -9px 21px 0px rgba(54,54,54,0.66);
+    padding: 5px;
+    font-family: 'Varela Round', sans-serif;
+
+    font-size: 15px;
+
+}
+#username{
+    position:relative;
+}
+#submit-b{
+    border-radius: 40px;
+    height: 40px;
+}
+
+.form-field-invalid{
+    border: 2px solid red;
+}
+
+.error{
+    font-size: 20px;
+    color: red;
+    font-family: 'Varela Round', sans-serif;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+   margin-top: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+@media only screen and (min-width: 450px){
+    h1{
+        margin-top: 50px;
+        font-size: 70px;
+    }
+    #room,#username, #submit-b {
+        margin-top: 100px;
+        height: 40px;
+        font-size: 15px;
+    }
+    #formElem{
+        max-width: 80%;
+    }
+}

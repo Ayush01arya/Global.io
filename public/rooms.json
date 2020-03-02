@@ -1,0 +1,24 @@
+{
+  "1": {
+      "name": "No Poverty",
+      "bg": "#E4243A"
+  },
+  "2":{"name":"Zero Hunger", "bg": "#DDA939"},
+  "3": {"name":"Good health","bg": "#46A049"},
+  "4": {"name":"Quality education","bg": "#C9212E"},
+  "5": {"name":"Gender equality","bg": "#F53F2A"},
+  "6": {"name":"Clean water and sanitation","bg": "#2CBFE3"},
+  "8": {"name":"Decent work and economic growth","bg": "#FDC411"},
+  "9": {"name":"Industry, innovation and infrastructure","bg": "#EC6E2C"},
+  "10": {"name":"Reduce Inequality","bg": "#EC6E2C"},
+  "11": {"name":"Mobilize Sustainable Cities and Communities","bg": "#FBA11D"},
+  "12": {"name":"Influence Responsible Consumption and Production","bg": "#C48B32"},
+  "13": {"name":"Organize Climate Action","bg": "#428041"},
+  "14": {"name":"Develop Life Below Water","bg": "#2892D3"},
+  "15": {"name":"Advance Life On Land","bg": "#59BA47"},
+  "16": {"name":"Guarantee Peace, Justice, and Strong Institutions","bg": "#15699B"},
+  "17": {"name":"Build Partnerships for the Goals","bg": "#164A65"}
+
+
+
+}

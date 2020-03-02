@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-animation: bgcolor 170s infinite;
+    animation: bgcolor 170s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+
+#message{
+    padding-left: 30px; position: fixed; bottom: 20px; width: 100%; height: 60px; padding-bottom: 20px;
+    z-index: 9;
+
+}
+
+#message input{
+    width: 80%;
+    border: 1px solid darkgrey;
+    height: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    -webkit-box-shadow: -9px -9px 21px 0px rgba(54,54,54,0.66);
+    -moz-box-shadow: -9px -9px 21px 0px rgba(54,54,54,0.66);
+    box-shadow: -9px -9px 21px 0px rgba(54,54,54,0.66);
+    outline: none;
+}
+
+#message input:hover{
+    cursor: pointer;
+    font-size: 10px;
+}
+
+#message button{
+    width: 15%;
+    z-index: 9;
+
+    height: 45px;
+    border: none;
+    background: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    outline: none;
+    -webkit-box-shadow: -9px -9px 21px 0px rgba(54,54,54,0.66);
+    -moz-box-shadow: -9px -9px 21px 0px rgba(54,54,54,0.66);
+    box-shadow: -9px -9px 21px 0px rgba(54,54,54,0.66);
+}
+
+
+#message button:hover{
+    cursor: pointer;
+}
+
+#chat-area{
+    height: 90%;
+    width: 100%;
+    position: fixed;
+    z-index: 7;
+    overflow-y:auto;
+    margin-bottom: 0;
+    margin-top: 40%;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px -7px 62px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -7px 62px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px -7px 62px 1px rgba(0,0,0,0.75);
+}
+
+.messageL{
+    float: left;
+    margin-left: 30px;
+    border-radius: 10px;
+    max-width: 45%;
+    min-width: 100px;
+   // min-height: 100px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    clear: both;
+
+}
+
+.user{
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+.content{
+    font-size: 10px;
+}
+.messageR{
+    float: right;
+    margin-right: 30px;
+    border-radius: 10px;
+    max-width: 45%;
+    min-width: 100px;
+    //min-height: 100px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    clear: both;
+
+
+}
+.messageG:last-of-type{
+    margin-bottom: 200px;
+}
+
+.messageC{
+    text-align: center;
+    border-radius: 10px;
+    max-width: 70%;
+    min-width: 100px;
+    min-height: 30px;
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    background:rgba(110,109,109,0.5);
+    clear: both;
+}
+.messageC:first-of-type{
+    margin-top: 50px;
+}
+#wrap{
+    max-width: 45%;
+}
+#header{
+    position: fixed;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    max-height: 10%;
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Varela Round', sans-serif;
+
+
+}
+#roomname{
+    font-size: 15px;
+    width: 90%;
+    text-align: center;
+    //border: 3px solid red;
+    //margin: 15px;
+    margin-top: 40px;
+    padding:10px;
+    border-radius: 30px;
+}
+#typing{
+    max-width: 70%;
+    min-width: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 10px;
+    font-size: 12px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#online{
+
+    overflow: hidden;
+    margin-top:70px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+    #chat-area{
+        margin-top: 30%;
+    }
+    #roomname{
+        text-align: left;
+        max-width: 50%;
+        font-size: 25px;
+        margin-top: 10px;
+
+    }
+    #online{min-width: 40%;
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+
+
+
+    }
+    #typing{
+        font-size: 15px;
+        margin-top: 10px;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 851px) {
+    #header {
+        min-height: 50px;
+    }
+    #roomname {
+        font-size: 30px;
+        text-align: left;
+        width: 50%;
+    }
+    #online{
+        font-size: 17px;
+
+        padding: 10px;
+
+    }
+    #typing{
+        font-size: 12px;
+        min-width: 200px;
+        padding: 10px;
+        background-color: white;
+    }
+    #chat-area {
+        margin-top: 12%;
+
+    }
+
+
+
+
+
+
+
+    #message {
+        height: 20px;
+        padding: 5px;
+        font-size: 10px;
+        bottom: 60px;
+
+    }
+    #message input {
+        height: 50%;
+        padding: 20px;
+
+
+    }
+    #message input:hover{
+
+        font-size: 15px;
+    }
+    #message button {
+        height: 40px;
+    }
+    .messageC {
+        min-height: 30px;
+        padding: 10px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+        font-size: 15px;
+        max-width: 50%;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+
+    }
+    .messageC:first-of-type{
+        margin-top: 80px;
+    }
+    .messageR {
+        max-width: 23%;
+        min-width: 200px;
+        font-size: 13px;
+        padding: 10px;
+
+
+    }
+    .user{
+        font-size: 13px;
+    }
+    .content{
+        font-size: 13px;
+    }
+
+
+
+}
